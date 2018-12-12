@@ -10,5 +10,15 @@ $(document).ready(function() {
         var q3Result = $("#question3").val();
         var totalScore;
     });
-
 });
+
+
+function questionOne(answer){
+    if (answer==="basketball") {
+        return 1
+    }
+    else if (answer==="swimming") {
+        return 2
+    }
+    
+}
