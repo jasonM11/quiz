@@ -8,6 +8,7 @@ $(document).ready(function() {
         var q1Result = $("#question1").val();
         var q2Result = $("#question2").val();
         var q3Result = $("#question3").val();
+        console.log("here");
         var totalScore;
     });
 });
@@ -20,5 +21,13 @@ function questionOne(answer){
     else if (answer==="swimming") {
         return 2
     }
-    
+    else if (answer==="reading") {
+        return 3
+    }
+    else {
+        return 0
+    }
 }
+
+console.log(questionOne("swimming"))
+
